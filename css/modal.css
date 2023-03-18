@@ -4,8 +4,8 @@
     top: 0px;
     width: 100%;
     height: 100vh;
-    background-color: rgba(255, 255, 255, 0.5);
-    display: flex;
+    background-color: rgba(255, 255, 255, 0.6);
+    display: flex; /*Alinea los elementos de forma horizontal o vertical*/
     justify-content: center;
     align-items: center;
 }
@@ -27,4 +27,43 @@
     border: 0px;
     color: #000;
     font-weight: bolder;
+}
+
+/**/
+
+form .input-content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin: 8px 0px; /*0 px en los laterales, 8 verticales para margenes externas*/
+}
+
+.button-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button-content button{
+    background-color: #008000;
+    border: 0px;
+    height: 30px;
+    width: 80px;
+    color: #ffffff;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.button-content button:hover{ /*En un evento sirve para sombrear
+    cuando el cursor de pasa sobre el elemento seleccionado*/
+    background-color: #ffffff;
+    border: 1px solid #008000;
+    color: #008000;
+}
+
+.close-modal{
+    /* visibility: hidden; Ocula el elemento y no hace más cambios
+    El display lo oculta y hace que el resto de la página se acomode*/
+    display: none;
 }
